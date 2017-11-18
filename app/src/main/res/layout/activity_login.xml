@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginBottom="16dp"
+    android:gravity="center"
+    tools:context="projetomobile.projetomobile.Activity.LoginActivity">
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:id="@+id/edtEmail"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:layout_height="wrap_content" />
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:id="@+id/edtSenha"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnLogar"
+        android:layout_width="400px"
+        android:text="Login"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="30px"
+        android:layout_marginTop="05dp"
+        android:text="Não Cadastrado"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
