@@ -1,5 +1,13 @@
 package projetomobile.projetomobile.Entidades;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.Exclude;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import projetomobile.projetomobile.DAO.ConfigFirebase;
+
 /**
  * Created by Carina on 18/11/2017.
  */
@@ -14,6 +22,32 @@ public class User {
     private String sobrenome;
     private String aniversario;
     private String sexo;
+
+    public User() {
+    }
+
+
+    public void Salvar(){
+        DatabaseReference referenciaFirebase = ConfigFirebase.getFirebase();
+        referenciaFirebase.child("usuario").child(String.valueOf(getId())).setValue(this);
+    }
+
+    @Exclude
+    public Map<String, Object> toMap(){
+
+    HashMap<String, Object> hashMapUser = new HashMap<>();
+        hashMapUser.put("id", getId());
+        hashMapUser.put("email", getEmail());
+        hashMapUser.put("senha", getSenha());
+        hashMapUser.put("nome", getNome());
+        hashMapUser.put("sobrenome", getSobrenome());
+        hashMapUser.put("aniversario", getAniversario());
+        hashMapUser.put("sexo", getSexo());
+
+
+        return hashMapUser;
+    }
+
 
     public String getId() {
         return id;
@@ -71,6 +105,6 @@ public class User {
         this.sexo = sexo;
     }
 
-    public User() {
-    }
+
+
 }
