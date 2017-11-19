@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,85 +7,80 @@
     tools:context="projetomobile.projetomobile.Activity.CadastroActivity">
 
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edtCadNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:inputType="textCapCharacters" />
 
-        <EditText
-            android:id="@+id/edtCadNome"
-            android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/edtCadSobrenome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sobrenome"
+        android:inputType="textCapCharacters" />
+
+    <EditText
+        android:id="@+id/edtCadAniversario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data de Aniversario"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/edtCadEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/edtCadSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edtCadConfirmarSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirma senha"
+        android:inputType="textPassword" />
+
+    <RadioGroup
+        android:id="@+id/rgSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbfem"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Nome"
-            android:inputType="textCapCharacters" />
+            android:checked="true"
+            android:text="Feminino" />
 
-        <EditText
-            android:id="@+id/edtCadSobrenome"
-            android:layout_width="match_parent"
+        <RadioButton
+            android:id="@+id/rbmas"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Sobrenome"
-            android:inputType="textCapCharacters" />
+            android:checked="true"
+            android:text="Masculino" />
+    </RadioGroup>
 
-        <EditText
-            android:id="@+id/edtCadAniversario"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Data de Aniversario"
-            android:inputType="date" />
-
-        <EditText
-            android:id="@+id/edtCadEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="E-mail"
-            android:inputType="textEmailAddress" />
-
-        <EditText
-            android:id="@+id/edtCadSenha"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Senha"
-            android:inputType="textPassword" />
-
-        <EditText
-            android:id="@+id/edtCadConfirmarSenha"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Confirma senha"
-            android:inputType="textPassword" />
-
-        <RadioGroup
-            android:id="@+id/rgSexo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rbfem"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="Feminino" />
-
-            <RadioButton
-                android:id="@+id/rbmas"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="Masculino" />
-        </RadioGroup>
-
-        <Button
-            android:id="@+id/btnGravar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cadastrar" />
-
-
-    </ScrollView>
+    <Button
+        android:id="@+id/btnGravar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar" />
 
 </LinearLayout>
+
+

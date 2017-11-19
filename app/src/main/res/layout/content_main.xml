@@ -20,13 +20,16 @@
         android:textSize="50px"
         android:layout_height="wrap_content"
         android:gravity="center"
+
+
         />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:src="@mipmap/login" />
+        android:src="@mipmap/login"
+    />
 
     <Button
         android:id="@+id/btnFazerLogin"
@@ -34,6 +37,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+
 
         />
 </LinearLayout>

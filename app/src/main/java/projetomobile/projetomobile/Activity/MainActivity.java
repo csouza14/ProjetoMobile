@@ -2,6 +2,8 @@ package projetomobile.projetomobile.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,12 +15,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
+import projetomobile.projetomobile.DAO.ConfigFirebase;
 import projetomobile.projetomobile.R;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private Button btnAbrirLogin;
+    private FirebaseAuth autenticacao;
+
+    private FragmentManager fragmentManager;
+    private FragmentTransaction fragmentTransaction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +35,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -42,10 +50,11 @@ public class MainActivity extends AppCompatActivity
         btnAbrirLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentAbrirLogin = new Intent(MainActivity.this,LoginActivity.class);
+                Intent intentAbrirLogin = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intentAbrirLogin);
             }
         });
+
     }
 
     @Override
@@ -104,4 +113,18 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
+    public void verificaUserLogado() {
+        autenticacao = ConfigFirebase.getFirebaseAutenticacao();
+        if (autenticacao.getCurrentUser() != null) {
+            Intent intent = new Intent(MainActivity.this, PrincipalActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    }
+
+
+
+
 }

@@ -75,7 +75,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Login efetuado com Sucesso!!!!", Toast.LENGTH_SHORT).show();
 
                 } else {
-                    Toast.makeText(LoginActivity.this, "Usuario ou senha invalido", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Usuario ou senha inválidos", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -87,8 +87,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void abreCadastroUser() {
-        Intent intentAbreCadastroUser = new Intent(LoginActivity.this, CadastrarUser.class);
-        startActivity(intentAbreCadastroUser);
+        Intent intent = new Intent(LoginActivity.this, CadastroActivity.class);
+        startActivity(intent);
 
     }
 }

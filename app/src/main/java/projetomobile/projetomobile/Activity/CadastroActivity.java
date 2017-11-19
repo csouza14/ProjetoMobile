@@ -45,8 +45,8 @@ public class CadastroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
-        edtCadEmail = (EditText) findViewById(R.id.edtEmail);
-        edtCadSenha = (EditText) findViewById(R.id.edtSenha);
+        edtCadEmail = (EditText) findViewById(R.id.edtCadEmail);
+        edtCadSenha = (EditText) findViewById(R.id.edtCadSenha);
         edtConfirmaSenha = (EditText) findViewById(R.id.edtCadConfirmarSenha);
         edtCadNome = (EditText) findViewById(R.id.edtCadNome);
         edtCadSobrenome = (EditText) findViewById(R.id.edtCadSobrenome);
@@ -76,7 +76,7 @@ public class CadastroActivity extends AppCompatActivity {
                     cadastrarUser();
 
                 } else {
-                    Toast.makeText(CadastroActivity.this, " As senhas não corresponde", Toast.LENGTH_LONG).show();
+                    Toast.makeText(CadastroActivity.this, " As senhas não sao correspondente", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -92,33 +92,33 @@ public class CadastroActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
-                    Toast.makeText(CadastroActivity.this, "Usuario cadastrado com suceso! ", Toast.LENGTH_LONG).show();
+                    Toast.makeText(CadastroActivity.this, "Usuario cadastrado com sucesso! ", Toast.LENGTH_LONG).show();
                     String identificadorUser = Base64Custom.codificarBase64(user.getEmail());
                     FirebaseUser userFirebase = task.getResult().getUser();
                     user.setId(identificadorUser);
-                    user.Salvar();
+                    user.salvar();
 
                     Preferencias preferencias = new Preferencias(CadastroActivity.this);
                     preferencias.SalvarUsuarioPreferencias(identificadorUser, user.getNome());
                    abrirLoginUser();
 
                 } else {
-                    String erroExecao = "";
+                    String erroExcecao = "";
 
                     try {
                         throw task.getException();
                     } catch (FirebaseAuthWeakPasswordException e) {
-                        erroExecao = "Senha fraca, digite uma senha forte";
+                        erroExcecao = "Senha fraca, digite uma senha forte";
 
                     } catch (FirebaseAuthInvalidCredentialsException e) {
-                        erroExecao = "O email digitado é inválido, digite um novo email!";
+                        erroExcecao = "O email digitado é inválido, digite um novo email!";
                     } catch (FirebaseAuthUserCollisionException e) {
-                        erroExecao = "Esse email já existe";
+                        erroExcecao = "Esse email já existe";
                     } catch (Exception e) {
-                        erroExecao = "Erro ao cadastrar...";
+                        erroExcecao = "Erro ao cadastrar...";
                         e.printStackTrace();
                     }
-                    Toast.makeText(CadastroActivity.this, "Erro: " + erroExecao, Toast.LENGTH_LONG).show();
+                    Toast.makeText(CadastroActivity.this, "Erro: " + erroExcecao, Toast.LENGTH_LONG).show();
 
 
                 }

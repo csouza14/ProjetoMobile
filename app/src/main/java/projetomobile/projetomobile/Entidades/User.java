@@ -27,7 +27,7 @@ public class User {
     }
 
 
-    public void Salvar(){
+    public void salvar(){
         DatabaseReference referenciaFirebase = ConfigFirebase.getFirebase();
         referenciaFirebase.child("usuario").child(String.valueOf(getId())).setValue(this);
     }
