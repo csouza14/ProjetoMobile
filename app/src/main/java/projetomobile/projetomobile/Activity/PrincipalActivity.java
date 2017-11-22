@@ -10,12 +10,14 @@ import projetomobile.projetomobile.R;
 
 public class PrincipalActivity extends AppCompatActivity {
     private LinearLayout laImc;
+    private  LinearLayout layoutEstatistica;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
 
         laImc = (LinearLayout) findViewById(R.id.laImc);
+        layoutEstatistica = (LinearLayout) findViewById(R.id.layoutEstatistica);
 
 
 
@@ -26,5 +28,20 @@ public class PrincipalActivity extends AppCompatActivity {
              startActivity(intent);
          }
      });
+
+
+        layoutEstatistica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PrincipalActivity.this,EstatisticaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
         }
+
+
+
     }
