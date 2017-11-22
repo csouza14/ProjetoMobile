@@ -73,10 +73,13 @@ public class CadastroActivity extends AppCompatActivity {
                         user.setSexo("Masculino");
                     }
 
+
+                }
+                if (!edtCadEmail.getText().toString().equals("") && !edtCadAniversario.getText().toString().equals("") && !edtCadSenha.getText().toString().equals("") && !edtCadSobrenome.getText().toString().equals("") && !edtCadNome.getText().toString().equals("") && !edtConfirmaSenha.getText().toString().equals("")) {
                     cadastrarUser();
 
                 } else {
-                    Toast.makeText(CadastroActivity.this, " As senhas não sao correspondente", Toast.LENGTH_LONG).show();
+                    Toast.makeText(CadastroActivity.this, " Verificar campos vazio", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -100,7 +103,7 @@ public class CadastroActivity extends AppCompatActivity {
 
                     Preferencias preferencias = new Preferencias(CadastroActivity.this);
                     preferencias.SalvarUsuarioPreferencias(identificadorUser, user.getNome());
-                   abrirLoginUser();
+                    abrirLoginUser();
 
                 } else {
                     String erroExcecao = "";
