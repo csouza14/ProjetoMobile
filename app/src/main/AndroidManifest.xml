@@ -26,7 +26,11 @@
         <activity android:name=".Activity.CadastroActivity" />
         <activity android:name=".Activity.Home" />
         <activity android:name=".Activity.ImcActivity" />
-        <activity android:name=".Activity.EstatisticaActivity"></activity>
+        <activity android:name=".Activity.EstatisticaActivity" />
+        <activity android:name=".Activity.Estatistica2Activity" />
+        <activity android:name=".Activity.Estatistica3Activity" />
+        <activity android:name=".Activity.Estatistica4Activity" />
+        <activity android:name=".Activity.Estatistica5Activity" />
     </application>
 
 </manifest>

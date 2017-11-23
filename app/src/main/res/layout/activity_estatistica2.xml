@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context="projetomobile.projetomobile.Activity.EstatisticaActivity">
+    tools:context="projetomobile.projetomobile.Activity.Estatistica2Activity">
+
 
     <com.github.mikephil.charting.charts.PieChart
         android:layout_width="match_parent"

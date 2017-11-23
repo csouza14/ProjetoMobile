@@ -13,14 +13,14 @@ import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
-import com.github.mikephil.charting.formatter.IValueFormatter;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 
 import projetomobile.projetomobile.R;
 
-public class EstatisticaActivity extends AppCompatActivity {
+public class Estatistica2Activity extends AppCompatActivity {
+
 
     private TextView txtProximo;
     PieChart pieChart;
@@ -35,7 +35,7 @@ public class EstatisticaActivity extends AppCompatActivity {
         txtProximo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(EstatisticaActivity.this, Estatistica2Activity.class);
+                Intent intent = new Intent(Estatistica2Activity.this, Estatistica3Activity.class);
                 startActivity(intent);
             }
         });
@@ -47,31 +47,30 @@ public class EstatisticaActivity extends AppCompatActivity {
 
         pieChart.setDragDecelerationFrictionCoef(0.95f);
 
-        pieChart.setDrawHoleEnabled(false);
+        pieChart.setDrawHoleEnabled(true);
         pieChart.setHoleColor(Color.WHITE);
         pieChart.setTransparentCircleRadius(60f);
 
         ArrayList<PieEntry> yValues = new ArrayList<>();
 
 
-        yValues.add(new PieEntry(2f,"Abaixo do peso"));
-        yValues.add(new PieEntry(44f,"Peso ideal"));
-        yValues.add(new PieEntry(36f,"Acima do peso"));
-        yValues.add(new PieEntry(18f,"Obeso"));
+        yValues.add(new PieEntry(75f,"Normal"));
+        yValues.add(new PieEntry(12.5f,"Sobrepeso"));
+        yValues.add(new PieEntry(12.5f,"Obesidade"));
 
 
         Description description = new Description();
-        description.setText("Evolução da obesidade no Brasil");
+        description.setText("Porcentual de peso das crianças no Brasil");
         description.setTextSize(11);
         pieChart.setDescription(description);
 
 
-        pieChart.animateY(1000, Easing.EasingOption.EaseInCubic);
 
-        PieDataSet dataSet = new PieDataSet(yValues, "Adultos");
+
+        PieDataSet dataSet = new PieDataSet(yValues, "Crianças");
         dataSet.setSliceSpace(2f);
         dataSet.setSelectionShift(5f);
-        dataSet.setColors(ColorTemplate.LIBERTY_COLORS);
+        dataSet.setColors(ColorTemplate.JOYFUL_COLORS);
 
         PieData data = new PieData((dataSet));
         data.setValueTextSize(15f);

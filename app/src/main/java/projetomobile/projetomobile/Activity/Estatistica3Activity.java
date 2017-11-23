@@ -7,20 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
-import com.github.mikephil.charting.formatter.IValueFormatter;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 
 import projetomobile.projetomobile.R;
 
-public class EstatisticaActivity extends AppCompatActivity {
+public class Estatistica3Activity extends AppCompatActivity {
 
     private TextView txtProximo;
     PieChart pieChart;
@@ -35,7 +33,7 @@ public class EstatisticaActivity extends AppCompatActivity {
         txtProximo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(EstatisticaActivity.this, Estatistica2Activity.class);
+                Intent intent = new Intent(Estatistica3Activity.this, Estatistica4Activity.class);
                 startActivity(intent);
             }
         });
@@ -47,31 +45,32 @@ public class EstatisticaActivity extends AppCompatActivity {
 
         pieChart.setDragDecelerationFrictionCoef(0.95f);
 
-        pieChart.setDrawHoleEnabled(false);
+        pieChart.setDrawHoleEnabled(true);
         pieChart.setHoleColor(Color.WHITE);
         pieChart.setTransparentCircleRadius(60f);
 
         ArrayList<PieEntry> yValues = new ArrayList<>();
 
 
-        yValues.add(new PieEntry(2f,"Abaixo do peso"));
-        yValues.add(new PieEntry(44f,"Peso ideal"));
-        yValues.add(new PieEntry(36f,"Acima do peso"));
-        yValues.add(new PieEntry(18f,"Obeso"));
+        yValues.add(new PieEntry(49f,"Normal"));
+        yValues.add(new PieEntry(17f,"Sobrepeso"));
+        yValues.add(new PieEntry(9f,"Obesidade"));
+        yValues.add(new PieEntry(14f,"Magreza aguda"));
+        yValues.add(new PieEntry(11f,"Magreza"));
 
 
         Description description = new Description();
-        description.setText("Evolução da obesidade no Brasil");
+        description.setText("Porcentual de peso de Adolescentes no Brasil");
         description.setTextSize(11);
         pieChart.setDescription(description);
 
 
-        pieChart.animateY(1000, Easing.EasingOption.EaseInCubic);
 
-        PieDataSet dataSet = new PieDataSet(yValues, "Adultos");
+
+        PieDataSet dataSet = new PieDataSet(yValues, "Adolescentes");
         dataSet.setSliceSpace(2f);
         dataSet.setSelectionShift(5f);
-        dataSet.setColors(ColorTemplate.LIBERTY_COLORS);
+        dataSet.setColors(ColorTemplate.VORDIPLOM_COLORS);
 
         PieData data = new PieData((dataSet));
         data.setValueTextSize(15f);

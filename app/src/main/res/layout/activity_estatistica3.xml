@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    tools:context="projetomobile.projetomobile.Activity.EstatisticaActivity">
+    tools:context="projetomobile.projetomobile.Activity.Estatistica3Activity">
+
 
     <com.github.mikephil.charting.charts.PieChart
-        android:layout_width="match_parent"
+        android:layout_width="415dp"
         android:layout_height="match_parent"
         android:id="@+id/piechart">
 
@@ -23,5 +23,6 @@
             />
 
     </com.github.mikephil.charting.charts.PieChart>
+
 
 </LinearLayout>
