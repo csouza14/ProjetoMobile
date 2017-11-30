@@ -2,9 +2,12 @@ package projetomobile.projetomobile.Activity;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Base64;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -54,6 +57,17 @@ public class CadastroActivity extends AppCompatActivity {
         rbMas = (RadioButton) findViewById(R.id.rbmas);
         rbFem = (RadioButton) findViewById(R.id.rbfem);
         btnGravar = (Button) findViewById(R.id.btnGravar);
+
+
+
+
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+
+
+
 
         btnGravar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -135,5 +149,17 @@ public class CadastroActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if(id==android.R.id.home){
+            this.finish();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 }
+
 

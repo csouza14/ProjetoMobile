@@ -94,7 +94,7 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="Feminino"
-            android:textSize="70px"
+            android:textSize="50px"
             android:layout_marginTop="10dp"
             />
 
@@ -104,7 +104,7 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="Masculino"
-            android:textSize="70px"
+            android:textSize="50px"
             android:layout_marginTop="10dp"/>
     </RadioGroup>
 

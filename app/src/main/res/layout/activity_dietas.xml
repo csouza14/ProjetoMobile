@@ -5,11 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="projetomobile.projetomobile.Activity.DietaActivity">
-
-
-
-
+    tools:context="projetomobile.projetomobile.Activity.DietasActivity">
 
 
     <TextView
@@ -23,6 +19,7 @@
         />
 
     <ImageView
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/dietalowcarb"
@@ -30,16 +27,17 @@
 
         />
     <TextView
+        android:id="@+id/txtCarb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="● Dieta LowCarb"
+        android:text=" Dieta LowCarb"
         android:textSize="20dp"
         android:gravity="center"
         android:layout_marginTop="05dp"
         />
 
     <ImageView
-        android:id="@+id/imgCarb"
+
         android:layout_gravity="center"
         android:layout_width="600dp"
         android:layout_height="150dp"
@@ -48,17 +46,17 @@
         />
 
     <TextView
-        android:id="@+id/imgOvo"
+        android:id="@+id/txtOvos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="● Dieta do Ovo"
+        android:text=" Dieta do Ovo"
         android:textSize="20dp"
         android:gravity="center"
         android:layout_marginTop="05dp"
         />
 
+
+
+
+
 </LinearLayout>
-
-
-
-

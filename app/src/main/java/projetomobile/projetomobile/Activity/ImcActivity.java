@@ -2,6 +2,7 @@ package projetomobile.projetomobile.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,6 +27,9 @@ public class ImcActivity extends AppCompatActivity {
         edtPeso = (EditText) findViewById(R.id.edtPeso);
         edtAltura = (EditText) findViewById(R.id.edtAltura);
         txtResultado = (TextView) findViewById(R.id.txtResultado);
+
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         Button btnCalcular = (Button) findViewById(R.id.btnCalcular);
@@ -106,5 +110,17 @@ public class ImcActivity extends AppCompatActivity {
             }
 
         });
+    }
+
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if(id==android.R.id.home){
+            this.finish();
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+
+    <item android:id="@+id/estatistica" android:title="Estatistica" android:icon="@drawable/estatistica"/>
+    <item android:id="@+id/imc" android:title="IMC" android:icon="@drawable/imc"/>
+    <item android:id="@+id/dieta" android:title="Sua Dieta" android:icon="@drawable/dieta"/>
+    <item android:id="@+id/sair" android:title="Sair" android:icon="@drawable/sair"/>
 </menu>

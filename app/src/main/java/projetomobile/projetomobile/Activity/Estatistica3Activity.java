@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -29,6 +30,10 @@ public class Estatistica3Activity extends AppCompatActivity {
 
         pieChart =(PieChart) findViewById(R.id.piechart);
         txtProximo = (TextView) findViewById(R.id.txtProximo);
+
+
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         txtProximo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,5 +85,15 @@ public class Estatistica3Activity extends AppCompatActivity {
 
 
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if(id==android.R.id.home){
+            this.finish();
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
