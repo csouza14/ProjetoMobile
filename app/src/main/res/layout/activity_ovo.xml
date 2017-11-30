@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="projetomobile.projetomobile.Activity.OvoActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Dieta do Ovo"
+        android:textSize="30dp"
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Segunda-Feira"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#11000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="05dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● Cafe da manha: 2 ovos cozidos e 1 fruta cítrica"
+        android:textSize="15dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginTop="05dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● Almoço: 2 batatas doce e 2 maçãs"
+        android:textSize="15dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginTop="05dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● Jantar: 1 prato grande de salada e frango"
+        android:textSize="15dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginTop="05dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terça-Feira"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#11000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="05dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● Cafe da manha: 2 ovos cozidos e 1 fruta cítrica"
+        android:textSize="15dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginTop="05dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● Almoço: vegetais verdes e salada de frango"
+        android:textSize="15dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginTop="05dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● Jantar: salada de legumes, 1 laranja e 2 ovos cozidos"
+        android:textSize="15dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginTop="05dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quarta-Feira"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#11000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="05dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● Cafe da manha: 2 ovos cozidos e 1 fruta cítrica"
+        android:textSize="15dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginTop="05dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● Almoço: um pouco de queijo, 1 tomate, 1 batata doce"
+        android:textSize="15dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginTop="05dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● Jantar: salada e frango"
+        android:textSize="15dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginTop="05dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quinta-Feira"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#11000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="05dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● Cafe da manha: 2 ovos cozidos e 1 fruta cítrica"
+        android:textSize="15dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginTop="05dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● Almoço: 1 fruta"
+        android:textSize="15dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginTop="05dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● Jantar: salada e frango cozido no vapor"
+        android:textSize="15dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginTop="05dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sexta-Feira"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#11000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="05dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● Cafe da manha: 2 ovos cozidos e 1 fruta cítrica"
+        android:textSize="15dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginTop="05dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● Almoço: 2 ovos cozidos e legumes"
+        android:textSize="15dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginTop="05dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="● Jantar: salada e peixe grelhado"
+        android:textSize="15dp"
+        android:layout_marginLeft="05dp"
+        android:layout_marginTop="05dp"
+        />
+</LinearLayout>

@@ -10,7 +10,9 @@ import projetomobile.projetomobile.R;
 
 public class PrincipalActivity extends AppCompatActivity {
     private LinearLayout laImc;
-    private  LinearLayout layoutEstatistica;
+    private LinearLayout layoutEstatistica;
+    private LinearLayout liDieta;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,30 +20,36 @@ public class PrincipalActivity extends AppCompatActivity {
 
         laImc = (LinearLayout) findViewById(R.id.laImc);
         layoutEstatistica = (LinearLayout) findViewById(R.id.layoutEstatistica);
+        liDieta = (LinearLayout) findViewById(R.id.liDieta);
 
 
-
-     laImc.setOnClickListener(new View.OnClickListener() {
-         @Override
-         public void onClick(View v) {
-             Intent intent = new Intent(PrincipalActivity.this, ImcActivity.class);
-             startActivity(intent);
-         }
-     });
-
-
-        layoutEstatistica.setOnClickListener(new View.OnClickListener() {
+        laImc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PrincipalActivity.this,EstatisticaActivity.class);
+                Intent intent = new Intent(PrincipalActivity.this, ImcActivity.class);
                 startActivity(intent);
             }
         });
 
 
+        layoutEstatistica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PrincipalActivity.this, EstatisticaActivity.class);
+                startActivity(intent);
+            }
+        });
 
-        }
 
+        liDieta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PrincipalActivity.this, DietaActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }
+
+}

@@ -31,6 +31,9 @@
         <activity android:name=".Activity.Estatistica3Activity" />
         <activity android:name=".Activity.Estatistica4Activity" />
         <activity android:name=".Activity.Estatistica5Activity" />
+        <activity android:name=".Activity.DietaActivity" />
+        <activity android:name=".Activity.LowCarbActivity" />
+        <activity android:name=".Activity.OvoActivity"></activity>
     </application>
 
 </manifest>
