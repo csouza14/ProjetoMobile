@@ -15,3 +15,10 @@ Sua dieta – temos nessa funcionalidade dois tipos de dietas disponíveis, a lo
 Peso – Nessa função temos o objetivo de o usuário colocar o peso dele em uma determinada data, e no final do mês analisar se ele perder ou ganhou peso.
 
 
+Desenvolvimento da aplicação 
+O app contém  quatro pacotes com as classes principais o projeto. 
+Pacote activity contém activity (cadastro, login, imc e estatística).
+Pacote DAO contém configuração do fire base.
+Pacote entidade contém a classe usuário.
+Pacote help contém configurações de preferências identificadoras de usuário.
+
