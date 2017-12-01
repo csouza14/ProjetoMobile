@@ -43,7 +43,6 @@ public class CadastroActivity extends AppCompatActivity {
     private User user;
     private FirebaseAuth autenticacao;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
