@@ -15,6 +15,7 @@ public class PrincipalActivity extends AppCompatActivity {
     private LinearLayout laImc;
     private LinearLayout layoutEstatistica;
     private LinearLayout layoutdieta;
+    private LinearLayout layoutpeso;
   //  private DrawerLayout mDrawer;
   //  private ActionBarDrawerToggle mToggle;
 
@@ -26,6 +27,7 @@ public class PrincipalActivity extends AppCompatActivity {
         laImc = (LinearLayout) findViewById(R.id.laImc);
         layoutEstatistica = (LinearLayout) findViewById(R.id.layoutEstatistica);
         layoutdieta = (LinearLayout) findViewById(R.id.layoutdieta);
+     
 
         //mDrawer = (DrawerLayout) findViewById(R.id.drawer);
        // mToggle = new ActionBarDrawerToggle(PrincipalActivity.this, mDrawer, R.string.Open, R.string.Close);

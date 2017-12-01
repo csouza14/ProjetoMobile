@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="projetomobile.projetomobile.Activity.ControlePesoActivity">
+
+
+    <EditText
+        android:id="@+id/edtPeso"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="-100dp"
+        android:background="#11000000"
+        android:hint="peso"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:textColorHint="@android:color/darker_gray"/>
+
+    <EditText
+
+        android:id="@+id/edtMeta"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:hint="meta"
+        android:textColorHint="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btnResultado"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Resultado"
+        android:background="@drawable/buttonstyle"
+        android:textStyle="bold"
+        android:textColor="#FFF">
+
+    </Button>
+
+</LinearLayout>
