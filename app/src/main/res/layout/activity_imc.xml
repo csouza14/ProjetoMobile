@@ -59,7 +59,7 @@
 
 
         <TextView
-            android:text="Muito Abaixo do Peso &lt; 17"
+            android:id="@+id/idMuitobaixo"
             android:textColor="#FFF"
             android:textSize="20dp"
             android:background="#2b84df"
@@ -70,7 +70,7 @@
             </TextView>
 
         <TextView
-            android:text="Abaixo do Peso 17 - 18.5"
+            android:id="@+id/idAbaixo"
             android:textColor="#FFF"
             android:textSize="20dp"
             android:background="#02a302"
@@ -81,7 +81,7 @@
         </TextView>
 
         <TextView
-            android:text="Peso Ideal  18.5 - 24.9"
+            android:id="@+id/idPesoIdeal"
             android:textColor="#FFF"
             android:textSize="20dp"
             android:background="#0fff0b"
@@ -92,10 +92,10 @@
         </TextView>
 
         <TextView
-            android:text="SobrePeso  25.0 - 29.9"
+            android:id="@+id/idSobrepeso"
             android:textColor="#FFF"
             android:textSize="20dp"
-            android:background="#fff30b"
+            android:background="#9370DB"
             android:layout_width="260dp"
             android:layout_height="30dp"
             android:gravity="center"
@@ -103,7 +103,7 @@
         </TextView>
 
         <TextView
-            android:text="Obesidade  &lt; 30.0 - 34.9"
+            android:id="@+id/idObeso"
             android:textColor="#FFF"
             android:textSize="20dp"
             android:background="#ff990b"
@@ -114,7 +114,7 @@
         </TextView>
 
         <TextView
-            android:text="Obeso Severo  35.0 - 39.9"
+            android:id="@+id/idObesoSevero"
             android:textColor="#FFF"
             android:textSize="20dp"
             android:background="#e10b00"
@@ -125,9 +125,9 @@
         </TextView>
 
         <TextView
-            android:text="Obeso Morbido &lt; 40.0"
+            android:id="@+id/idObesoMorbido"
             android:textColor="#FFF"
-            android:background="#000"
+            android:background="#ccc"
             android:textSize="20dp"
             android:layout_width="260dp"
             android:layout_height="30dp"
