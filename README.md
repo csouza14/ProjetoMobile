@@ -31,5 +31,5 @@ Pasta com os Diagramas
 
 Diagrama de classe 
 
-<a href ="https:https://github.com/csouza14/ProjetoMobile/blob/master/app/Diagramas/DiagramaDeClasse.png">Diagramas</a>
+<a href ="https://github.com/csouza14/ProjetoMobile/blob/master/app/Diagramas/DiagramaDeClasse.png">Diagramas</a>
 
