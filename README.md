@@ -42,7 +42,6 @@ Pasta com as imagens do Prototipo de Telas
 Pasta com os Diagramas
 <a href ="https://github.com/csouza14/ProjetoMobile/tree/master/app/Diagramas">Diagramas</a>
 
-<img src="https://raw.githubusercontent.com/csouza14/ProjetoMobile/master/app/Diagramas/DiagramaSequ%C3%AAncia.jpg"> Diagrama Sequencia Cadastro
-<img src="https://raw.githubusercontent.com/csouza14/ProjetoMobile/master/app/Diagramas/Untitled%20DiagramDieta.png"> Diagrama Sequencia Dieta
-<img src="https://raw.githubusercontent.com/csouza14/ProjetoMobile/master/app/Diagramas/Untitled%20DiagramIMC.png"> Diagrama Sequencia IMC
-
+<img src="https://raw.githubusercontent.com/csouza14/ProjetoMobile/master/app/Diagramas/DiagramaSequ%C3%AAncia.jpg"> 
+<img src="https://raw.githubusercontent.com/csouza14/ProjetoMobile/master/app/Diagramas/Untitled%20DiagramDieta.png">
+<img src="https://raw.githubusercontent.com/csouza14/ProjetoMobile/master/app/Diagramas/Untitled%20DiagramIMC.png"> 
