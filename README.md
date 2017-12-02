@@ -22,7 +22,9 @@ Pacote DAO contém configuração do fire base.
 Pacote entidade contém a classe usuário.
 Pacote help contém configurações de preferências identificadoras de usuário.
 
+Pasta com as imagens do Prototipo de Telas 
+<a href ="https://github.com/csouza14/ProjetoMobile/tree/master/app/Prototipo">Prototipo</a>
 
-<a href =" https://github.com/csouza14/ProjetoMobile/tree/master/app/Prototipo">
-</a>
+Pasta com os Diagramas
+<a href ="https://github.com/csouza14/ProjetoMobile/tree/master/app/Diagramas">Diagramas</a>
 
