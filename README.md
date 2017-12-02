@@ -35,6 +35,7 @@ Pasta com as imagens do Prototipo de Telas
 <img src="https://raw.githubusercontent.com/csouza14/ProjetoMobile/master/app/Prototipo/TelaDietaLowCarb.png">Tela Dieta LowCarb
 
 <img src="https://github.com/csouza14/ProjetoMobile/blob/master/app/Prototipo/TelaDietaOvo.png"> Tela Dieta ovo
+<img src="
 
 
 
@@ -42,3 +43,4 @@ Pasta com as imagens do Prototipo de Telas
 Pasta com os Diagramas
 <a href ="https://github.com/csouza14/ProjetoMobile/tree/master/app/Diagramas">Diagramas</a>
 
+<img src="https://github.com/csouza14/ProjetoMobile/blob/master/app/Diagramas/DiagramaDeClasse.png"> Diagrama classe
