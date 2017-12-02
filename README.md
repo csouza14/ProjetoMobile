@@ -24,11 +24,21 @@ Pacote help contém configurações de preferências identificadoras de usuário
 
 Pasta com as imagens do Prototipo de Telas 
 <a href ="https://github.com/csouza14/ProjetoMobile/tree/master/app/Prototipo">Prototipo</a>
-<img src="https://raw.githubusercontent.com/csouza14/ProjetoMobile/master/app/Prototipo/Login.png"> Login </a>
+<img src="https://raw.githubusercontent.com/csouza14/ProjetoMobile/master/app/Prototipo/Login.png"> Login 
+<img src ="https://raw.githubusercontent.com/csouza14/ProjetoMobile/master/app/Prototipo/TelaCadastro.png">Tela Cadastro 
+<img src="https://raw.githubusercontent.com/csouza14/ProjetoMobile/master/app/Prototipo/TelaPrincipal.png"> Tela Principal 
+<img src="https://github.com/csouza14/ProjetoMobile/blob/master/app/Prototipo/TelaEstatistica.png">  Tela Estatistica 
+<img src="https://raw.githubusercontent.com/csouza14/ProjetoMobile/master/app/Prototipo/TelaEstatistica1.png">Tela Estatistica 1 
+<img src="https://raw.githubusercontent.com/csouza14/ProjetoMobile/master/app/Prototipo/TelaIMC.png">Tela IMC 
+<img src="https://raw.githubusercontent.com/csouza14/ProjetoMobile/master/app/Prototipo/TelaDieta.png">Tela Dieta
+
+<img src="https://raw.githubusercontent.com/csouza14/ProjetoMobile/master/app/Prototipo/TelaDietaLowCarb.png">Tela Dieta LowCarb
+
+<img src="https://github.com/csouza14/ProjetoMobile/blob/master/app/Prototipo/TelaDietaOvo.png"> Tela Dieta ovo
+
+
+
 
 Pasta com os Diagramas
 <a href ="https://github.com/csouza14/ProjetoMobile/tree/master/app/Diagramas">Diagramas</a>
-
-
-<img src=="https://github.com/csouza14/ProjetoMobile/blob/master/app/Diagramas/DiagramaDeClasse.png">Diagramas<br>
 
