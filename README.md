@@ -30,5 +30,5 @@ Pasta com os Diagramas
 <a href ="https://github.com/csouza14/ProjetoMobile/tree/master/app/Diagramas">Diagramas</a>
 
 
-<a href ="https://github.com/csouza14/ProjetoMobile/blob/master/app/Diagramas/DiagramaDeClasse.png">Diagramas</a>
+<img src=="https://github.com/csouza14/ProjetoMobile/blob/master/app/Diagramas/DiagramaDeClasse.png">Diagramas<br>
 
